@@ -18,7 +18,7 @@ export default function Support() {
           <div className="flex -mx-2 flex-wrap">
             <div className="w-full md:flex-1 px-2">
 
-              <p className="text-tertiary text-center mb-4">Preguntas frecuentes</p>
+              <p className="text-tertiary text-center mb-4">Frequently Asked Questions</p>
               
               <p className="font-bold mb-4">General Questions</p>
 
@@ -215,10 +215,10 @@ export default function Support() {
 
             <div className="w-full md:w-1/4 px-2">
               <div className="rounded-xl shadow text-center p-2 ">
-                <p className="text-tertiary text-center mb-8">Cómunicate con el equipo Inffluapp</p>
+                <p className="text-tertiary text-center mb-8">Contact us</p>
                 <img src="/speaker.png" className="m-auto w-full md:w-1/2 mb-8"/>
-                <p className=" text-center mb-8">¿Necesitas ayuda con algún proceso de la aplicación o del servicio Inffluapp?</p>
-                <p className="mb-4"><a href="tel:+521234567890" className="text-tertiary text-center">+52 1234567890</a></p>
+                <p className=" text-center mb-8">Do you need help with the app or Inffluapp's service?</p>
+                <p className="mb-4"><a href="tel:+528120769076" className="text-tertiary text-center">+52 81 2076 9076</a></p>
                 <p className="mb-4"><a href="mailto:hola@influ.app" className="text-tertiary text-center">hola@influ.app</a></p>
               </div>
             </div>
