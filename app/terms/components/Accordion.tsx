@@ -1,13 +1,13 @@
 'use client'
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 
 export default function Accordion({
   title, text
 }: {
   title: string;
-  text: string;
+  text: string | ReactNode;
 }) {
   const [open, setOpen] = useState(false)
 

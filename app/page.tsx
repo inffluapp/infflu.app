@@ -4,13 +4,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [days, setdaysSpan] = useState();
-  const [hours, sethoursSpan] = useState();
-  const [minutes, setminutesSpan] = useState();
-  const [seconds, setsecondsSpan] = useState();
+  const [days, setdaysSpan] = useState<string | number>();
+  const [hours, sethoursSpan] = useState<string | number>();
 
-  function getTimeRemaining(endtime) {
-    const total = Date.parse(endtime) - Date.parse(new Date());
+  function getTimeRemaining(endtime: Date) {
+    const total = endtime.getTime() - new Date().getTime();
     const seconds = Math.floor((total / 1000) % 60);
     const minutes = Math.floor((total / 1000 / 60) % 60);
     const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
@@ -25,23 +23,21 @@ export default function Home() {
     };
   }
 
-  function initializeClock(endtime) {
+  function initializeClock(endtime: Date) {
     function updateClock() {
       const t = getTimeRemaining(endtime);
 
       setdaysSpan(t.days);
       sethoursSpan(('0' + t.hours).slice(-2));
-      setminutesSpan(('0' + t.minutes).slice(-2));
-      setsecondsSpan(('0' + t.seconds).slice(-2));
     }
 
     updateClock();
-    const timeinterval = setInterval(updateClock, 1000);
+    setInterval(updateClock, 1000);
   }
 
   useEffect(() => {
     const deadline = new Date(new Date().getFullYear(), 11);
-		initializeClock( deadline);
+		initializeClock(deadline);
   }, [])
 
   return (

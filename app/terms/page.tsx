@@ -18,9 +18,9 @@ export default function Terms() {
 
         <p className="font-bold mb-4">1. Definitions</p>
         <ul className="list-disc pl-6 mb-6">
-          <li><span>“App”</span> refers to Inffluapp, available on the App Store and Google Play Store.</li>   
-          <li><span>“User”</span> refers to anyone who accesses or uses the app, including influencers and businesses.</li> 
-          <li><span>“We”, “us”, and “our”</span> refer to Inffluapp and its operators.</li>
+          <li><span>"App"</span> refers to Inffluapp, available on the App Store and Google Play Store.</li>   
+          <li><span>"User"</span> refers to anyone who accesses or uses the app, including influencers and businesses.</li> 
+          <li><span>"We", "us", and "our"</span> refer to Inffluapp and its operators.</li>
         </ul>
 
         <p className="font-bold mb-4">2. Eligibility</p>

@@ -4,7 +4,7 @@ export default function Header({
   hideDate
 }: Readonly<{
   title: string;
-  hideDate: boolean;
+  hideDate?: boolean;
 }>) {
   return (
     <div className="w-full px-8 py-4 border-b">

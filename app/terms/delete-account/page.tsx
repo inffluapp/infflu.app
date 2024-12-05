@@ -1,11 +1,10 @@
 'use client';
 
-import type { Metadata } from "next";
 import Header from "../components/Header";
 
 export default function DeleteAccount() {
 
-  function sendEmail(e) {
+  function sendEmail(e: any) {
     e.preventDefault();
 
     const form = e.target;
@@ -13,10 +12,10 @@ export default function DeleteAccount() {
 
     const formJson = Object.fromEntries(formData.entries());
 
-    var subject = "Solicitud de eliminación de cuenta";
-    var message = `Instagram: ${formJson.instagram}. \n Número de teléfono: ${formJson.number}.`;
-    var email = "hola@infflu.app";
-    var href = "mailto:" + email + "?subject=" + subject + "&body=" + message;
+    const subject = "Solicitud de eliminación de cuenta";
+    const message = `Instagram: ${formJson.instagram}. \n Número de teléfono: ${formJson.number}.`;
+    const email = "hola@infflu.app";
+    const href = "mailto:" + email + "?subject=" + subject + "&body=" + message;
     window.open(href)
   }
 

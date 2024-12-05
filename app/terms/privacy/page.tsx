@@ -14,8 +14,6 @@ export default function Terms() {
       <div className="flex-1 w-full  px-8 py-4">
         <p className="mb-6">Inffluapp is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our app, Inffluapp, available on the Google Play Store and App Store. By using our app, you agree to the practices described in this Privacy Policy.   </p>
 
-        
-
         <p className="font-bold mb-4">1. Information We Collect </p>
 
         <p className="font-bold mb-4">a. Information You Provide  </p>
