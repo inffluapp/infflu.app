@@ -213,6 +213,7 @@ export default function Support() {
               </div>
             </div>
 
+
             <div className="w-full md:w-1/4 px-2">
               <div className="rounded-xl shadow text-center p-2 ">
                 <p className="text-tertiary text-center mb-8">Contact us</p>
